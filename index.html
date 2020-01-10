@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Unity WebGL Player | ICBC-AppSimulator</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
+	  //gameInstance.SetFullscreen(1);
+    </script>
+	<style type="text/css">
+		body {
+			overflow:hidden;
+		}
+	</style>
+  </head>
+  <body>
+  <div class="webgl-content" style="width: calc(100vh / 1.78); height: 100vh">
+      <div id="gameContainer" style="height: 100%"></div>
+    
+    </div>
+  </body>
+</html>
